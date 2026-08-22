@@ -4,36 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Le Carnet Gourmand</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <header>
+      <img src="������������" />
       <h3>Le Carnet Gourmand</h3>
       <p>Avis des lecteurs</p>
     </header>
     <main>
-      <h1>Pâtes crémeuses au citron</h1>
-      <p>Laissez votre avis sur cette recette grâce au formulaire ci-contre.</p>
-      <h2>Ingrédients</h2>
-      <ul>
-        <li>Pâtes</li>
-        <li>Crème</li>
-        <li>Citron</li>
-        <li>Parmesan</li>
-      </ul>
-      <h2>Préparation</h2>
-      <ul>
-        <li>Cuire les pâtes.</li>
-        <li>Mélanger la crème et le citron.</li>
-        <li>Ajouter le parmesan.</li>
-      </ul>
+      <section class="card">
+        <h1>Pâtes crémeuses au citron</h1>
+        <p>
+          Laissez votre avis sur cette recette grâce au formulaire ci-contre.
+        </p>
+        <div class="recette">
+          <h2>Ingrédients</h2>
+          <ul>
+            <li>Pâtes</li>
+            <li>Crème</li>
+            <li>Citron</li>
+            <li>Parmesan</li>
+          </ul>
+          <h2>Préparation</h2>
+          <ol>
+            <li>Cuire les pâtes.</li>
+            <li>Mélanger la crème et le citron.</li>
+            <li>Ajouter le parmesan.</li>
+          </ol>
+        </div>
+      </section>
       <aside>
         <h2>Laisser un commentaire</h2>
-        <form action=""></form>
+        <form class="comment-form">
+          <div>
+            <label for="name">Votre nom</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Ex: Léa"
+              required
+            />
+            <p>Minimum 2 caractères</p>
+          </div>
+          <div>
+            <label for="comment">Votre commentaire</label>
+            <br />
+            <textarea
+              type="text"
+              id="comment"
+              name="comment"
+              placeholder="Votre avis sur la recette..."
+              required
+              rows="5"
+              cols="20"
+            ></textarea>
+            <p>Minimum 10 caractères</p>
+          </div>
+          <button type="submit">Publier</button>
+        </form>
         <h2>Commentaires</h2>
+        <div class="comments"></div>
       </aside>
     </main>
     <footer>
       <p>Devoir Javascript -- Frontend</p>
     </footer>
+    <script type="text/Javascript" src="./assets/js/script.js"></script>
   </body>
 </html>

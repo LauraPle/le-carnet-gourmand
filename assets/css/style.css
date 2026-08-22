@@ -1,0 +1,69 @@
+body{
+    max-width: 1050px;
+    background-color:#f6f7fb;
+    margin:0 auto;
+  padding: 0px 16px;
+
+}
+
+main{
+    display:flex;
+    flex-direction:row;
+}
+header{
+border-bottom: 1px solid #e5e7eb;
+}
+
+footer{
+    border-top: 1px solid #e5e7eb;;
+}
+
+.card{
+    border-radius:16px;
+    padding:16px;
+    border:1px solid #e5e7eb;
+    background-color:#ffffff;
+}
+
+.recette{
+    background-color: #fafafa;
+    border-radius:12px;
+    padding:14px;
+    border:1px solid #e5e7eb;
+}
+
+form{
+    padding:10px 12px;
+    border-radius:12px;
+}
+
+.comment-form button{
+padding:10px 14px;
+border-radius:12px;
+background-color: #2563eb;
+color:#ffffff;
+border:0;
+}
+
+h1,h2,h3{
+    font-weight: bolder;
+    
+}
+
+p{
+color:#6b7280;
+min-width: 14px;
+}
+
+.comments{
+    padding: 14px;
+    border-radius: 12px;
+    border:1px solid #e5e7eb;
+    gap:12px;
+}
+
+@media screen and (max-width:900px){
+    main{
+        flex-direction:column;
+    }
+}
